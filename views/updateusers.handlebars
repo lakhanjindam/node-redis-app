@@ -1,0 +1,23 @@
+<h1>Update User</h1>
+{{#if error}} <span>{{error}}</span> {{/if}}
+
+<form method="POST" action="/user/update">
+    <div class="form-group">
+        <label>ID: </label>
+        <input class="form-control-plaintext" name="id" type="text" placeholder="Add ID" required>
+
+        <label>First Name: </label>
+        <input class="form-control-plaintext" name="first_name" type="text" placeholder="First Name" required>
+
+        <label>Last Name: </label>
+        <input class="form-control-plaintext" name="last_name" type="text" placeholder="Last Name" required>
+
+        <label>Email: </label>
+        <input class="form-control-plaintext" name="email" type="text" placeholder="Email" required>
+
+        <label>Phone: </label>
+        <input class="form-control-plaintext" name="phone" type="text" placeholder="Phone" required>
+
+    </div>
+    <button type="submit" class="btn btn-primary" value="Update">Submit</button>
+</form>
